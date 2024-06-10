@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <h3>
+          <i class="fas fa-tachometer-alt"></i>
+          <span class="header-text">Dashboard</span>
+        </h3>
+        <button class="close-btn" onclick="toggleSidebar()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <ul class="sidebar-menu">
+        <li>
+          <a href="#"
+            ><i class="fas fa-home"></i> <span class="menu-text">Home</span></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fas fa-chart-line"></i>
+            <span class="menu-text">Analytics</span></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fas fa-user"></i>
+            <span class="menu-text">Profile</span></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fas fa-cogs"></i>
+            <span class="menu-text">Settings</span></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fas fa-sign-out-alt"></i>
+            <span class="menu-text">Logout</span></a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="main-content" id="main-content">
+      <header>
+        <button class="open-btn" onclick="toggleSidebar()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <h2>
+          <i class="fas fa-tachometer-alt"></i>
+          <span class="header-text">Welcome to the Dashboard</span>
+        </h2>
+      </header>
+      <section>
+        <h3>Dashboard Content</h3>
+        <p>This is where the main dashboard content will go.</p>
+        <div class="content">
+          <div class="table-container">
+            <h4>Table Example</h4>
+            <table>
+              <thead>
+                <tr>
+                  <th>Column 1</th>
+                  <th>Column 2</th>
+                  <th>Column 3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Data 1</td>
+                  <td>Data 2</td>
+                  <td>Data 3</td>
+                </tr>
+                <tr>
+                  <td>Data 4</td>
+                  <td>Data 5</td>
+                  <td>Data 6</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="chart-container">
+            <h4>Chart Example</h4>
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
